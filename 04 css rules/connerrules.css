@@ -1,0 +1,24 @@
+titl { 
+	color: navy; 
+	font-family: helvetica ; 
+	font-weight: bold ; 
+	font-size: 100 ;
+	}
+
+h1 {
+	color: black;
+	background-color: cornflowerblue ; 
+	font-family: times new roman ; 
+	font-weight: normal ;
+	font-size: 35 ;
+	}
+
+fig caption {
+	
+	color: crimson;
+	background-color: cornflowerblue
+	font-family: helvetica ; 
+	font-weight: lighter ;
+	font-size: 20 ; 
+	
+}
