@@ -1,24 +1,127 @@
 titl { 
-	color: navy; 
-	font-family: helvetica ; 
-	font-weight: bold ; 
-	font-size: 100 ;
+	color: firebrick; 
+	font-family: helvetica neue  ; 
+	font-weight: bold; 
+	font-size: 70 ;
+	align-content: center
 	}
 
 h1 {
-	color: black;
-	background-color: cornflowerblue ; 
-	font-family: times new roman ; 
-	font-weight: normal ;
-	font-size: 35 ;
+	color: white;
+	background-color: navy; 
+	font-family: helvetica neue; 
+	font-weight: lighter;
+	font-size: 30 ;
+	text-transform: lowercase ; 
 	}
 
-fig caption {
+h2 {
+	color: black;
+	font-family: helvetica neue; 
+	font-weight: bold;
+	font-size: 20 ;
+	}
+
+
+p {
+	color: black;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: lowercase
+	}
+
+fieldset {
+	color: black;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: lowercase
+	}
+
+legend {
+	color: black;
+	font-family: garamond ; 
+	font-weight: bold;
+	font-size: 20 ;
+	text-transform: capitalize
+	}
+
+thead {
+	color: black;
+	font-family: helvetica neue; 
+	font-weight: normal;
+	font-size: 18 ;
+	text-transform: uppercase ;
+	letter-spacing: 0.1 em ;
+	border-bottom: 1px solid ; 
+	border-top: 1px solid; 
+	}
 	
-	color: crimson;
-	background-color: cornflowerblue
-	font-family: helvetica ; 
-	font-weight: lighter ;
-	font-size: 20 ; 
+tbody {
+	color: black;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: capitalize;
+	}
+
+table {
+	width: 600 px; 
+}
+
+th, td {
+	
+	padding: 7px 10px 10px 10px
+}
+
+li {
+	color: black;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: lowercase ; 
+	line-height: normal
+}
+	
+a {
+	color: black;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: lowercase
+
+}
+
+a:hover {
+	color: blue;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: lowercase
+		
+}
+	
+figcaption {
+	color: black;
+	font-family: garamond; 
+	font-weight: normal;
+	font-size: 16 ;
+	text-transform: lowercase
+		
+}
+
+body {
+	margin-left: 100px;
+	margin-right: 100px; 
+	margin-bottom: 80px; 
+	margin-top: 50px ;
+	border-style: dotted ;
+	border-color: paleturquoise ;
+	padding: 20px ;
+ 
 	
 }
+
+
+	
