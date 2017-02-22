@@ -1,68 +1,70 @@
 titl { 
-	color: firebrick; 
-	font-family: helvetica neue  ; 
+	color: blue; 
+	font-family: impact  ; 
 	font-weight: bold; 
-	font-size: 70 ;
-	align-content: center
+	font-size: 100 ;
+	text-transform: uppercase ;
+	text-align: center
 	}
 
 h1 {
 	color: white;
-	background-color: navy; 
-	font-family: helvetica neue; 
-	font-weight: lighter;
-	font-size: 30 ;
-	text-transform: lowercase ; 
+	background-color: black; 
+	font-family: myriad pro; 
+	font-size: 50 ;
+	text-transform: uppercase; 
+	text-align: center 
 	}
 
 h2 {
-	color: black;
-	font-family: helvetica neue; 
-	font-weight: bold;
-	font-size: 20 ;
+	color: blue;
+	font-family: impact ; 
+	font-weight: normal;
+	font-size: 30 ;
+	text-transform: lowercase
 	}
 
 
 p {
 	color: black;
-	font-family: garamond; 
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 16 ;
-	text-transform: lowercase
+	font-size: 22 ;
+	text-transform: capitalize
 	}
 
 fieldset {
 	color: black;
-	font-family: garamond; 
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 16 ;
-	text-transform: lowercase
+	font-size: 22 ;
+	text-transform: capitalize
 	}
 
 legend {
 	color: black;
-	font-family: garamond ; 
+	font-family: myriad pro ; 
 	font-weight: bold;
-	font-size: 20 ;
-	text-transform: capitalize
+	font-size: 28 ;
+	text-transform: uppercase
 	}
 
 thead {
 	color: black;
-	font-family: helvetica neue; 
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 18 ;
+	font-size: 22 ;
 	text-transform: uppercase ;
 	letter-spacing: 0.1 em ;
-	border-bottom: 1px solid ; 
-	border-top: 1px solid; 
+	border-bottom: 5px solid blue ; 
+	border-top: 5px solid blue ; 
 	}
 	
 tbody {
 	color: black;
-	font-family: garamond; 
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 16 ;
+	font-size: 20 ;
 	text-transform: capitalize;
 	}
 
@@ -77,48 +79,50 @@ th, td {
 
 li {
 	color: black;
-	font-family: garamond; 
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 16 ;
-	text-transform: lowercase ; 
-	line-height: normal
+	font-size: 24 ;
+	text-transform: capitalize; 
+	line-height: normal ;
+	text-align: center
 }
 	
 a {
 	color: black;
-	font-family: garamond; 
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 16 ;
-	text-transform: lowercase
+	font-size: 22 ;
+	text-transform: capitalize
 
 }
 
 a:hover {
-	color: blue;
-	font-family: garamond; 
+	color: red;
+	font-family: myriad pro; 
 	font-weight: normal;
-	font-size: 16 ;
-	text-transform: lowercase
+	font-size: 22 ;
+	text-transform: capitalize
 		
 }
 	
 figcaption {
 	color: black;
-	font-family: garamond; 
-	font-weight: normal;
-	font-size: 16 ;
-	text-transform: lowercase
+	font-family: impact; 
+	font-weight: lighter;
+	font-size: 20 ;
+	text-transform: uppercase ;
+
 		
 }
 
 body {
-	margin-left: 100px;
-	margin-right: 100px; 
+	margin-left: 50px;
+	margin-right: 50px; 
 	margin-bottom: 80px; 
 	margin-top: 50px ;
-	border-style: dotted ;
-	border-color: paleturquoise ;
+	background-color: silver ;
 	padding: 20px ;
+	text-align: center
  
 	
 }
