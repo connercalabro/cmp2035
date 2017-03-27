@@ -157,10 +157,10 @@ header h2 {
 	color: #E79647; 
 	background-color: rgba(255, 255, 255, .2);
 	padding-bottom: 15px;
+	padding-right: 4px; 
 	padding-left: 20px ;
 	font-size: 14px;
-	max-width: 240px ; 
-	
+	max-width: 250px;
 	
 }
 
@@ -264,8 +264,7 @@ color: #808284 ;
 	top: 380px; 
 	right: 0;
 	padding-top: 40px ;
-	border-top: 8px solid ;
-	border-top-color: solid rgba(78, 54, 75, .8);
+	border-top: 8px solid rgba(78, 54, 75, .8);
 	}
 
 .sidebar .wrapper { 
