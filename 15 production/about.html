@@ -17,78 +17,122 @@
 		<header>
 			<nav>
 				<h1> chelsea hayashi</h1>
-				<button onClick="myFunction()"class="dropdownbutton"> About </button>
-				<div id="dropdown" class="dropdowncontent"> 
+				<button onclick="showAbout()" class="dropdownbutton"> About </button>
+				<div id="aboutMenu" class="dropdowncontent"> 
 					<a href="about-whoiam.html"> who i am</a>
 					<a href="about-skills.html"> skills</a>
 					<a href="about-interests.html"> interests</a>
 					<a href="about-education.html"> education</a>
 					<a href="about-resume.html"> resume</a>
-					</div>
-				<button class="dropdownbutton"> design </button>
-				<button class="dropdownbutton"> fine arts </button>
-				<button class="dropdownbutton"> writing </button>
+				</div>
+				<button onclick="showDesign()" class="dropdownbutton"> design </button>
+				<div id="designMenu" class="dropdowncontent"> 
+					<a href="design-logos.html"> logos</a>
+					<a href="design-covers.html"> covers</a>
+					<a href="design-powerpoints.html"> powerpoints</a>
+					<a href="design-posters.html"> posters + flyers</a>
+				</div>
+				<button onclick="showFinearts()" class="dropdownbutton"> fine arts </button>
+				<div id="fineartsMenu" class="dropdowncontent"> 
+					<a href="finearts-drawings.html"> drawings</a>
+					<a href="finearts-paintings.html"> paintings</a>
+				</div>
+				<button onclick="showWriting()" class="dropdownbutton"> writing </button>
+				<div id="writingMenu" class="dropdowncontent"> 
+					<a href="writing-personal.html"> personal pieces</a>
+					<a href="writing-research.html"> research projects</a>
+				</div>
 				<button class="dropdownbutton"> contact </button>
 
 			</nav>
 		</header>
-		<section class="main"> 
+		<div class="padding">
+			<section class="main"> 
 
 
-			<h1> about </h1>
+				<h1> about </h1>
 
-			<h2>  understanding me--as a student, an artist, a professional, and a person </h2>
+				<h2>  understanding me--as a student, an artist, a professional, and a person </h2>
 
 
-		<footer>
-				<a> 415-378-3782</a>
-				<a href="http://validator.w3.org/check/referer" class="email">chelsea.hayashi@tufts.edu</a>
+	<footer>
+		<div id = "social_buttons">
+			<a href="http://www.linkedin.com">
+				<img src="assets/social/linkedinblack.png" width="35" height="35" title="Linkedin">
+			</a>
 			
+			<a href="http://www.facebook.com">
+				<img src="assets/social/fbblack.png" width="35" height="35" title="Facebook">
+			</a>
+			
+			<a href="http://www.instagram.com">
+				<img src="assets/social/instablack.png" width="100" height="45" title="Instagram">
+			</a>
+		</div>	
+	</footer>
 				
+				
+				
+			</section>
+			<div id="allFive">
+				<div class="inline">
+					<a href="about-whoiam.html">
+						<img id="firstImg" src="assets/about/whoiam215x278.png"whoiamreal.png"" width="215" height="278" title="Who I Am"/>
+					</a>
+				</div>
+				<div class="inline">
+					<div>
+						<a href="about-skills.html">
+							<img id="secondImg" src="assets/about/skills163x145.png" width="163" height="145" title="Skills"/>
+						</a>
+						<a href="about-interests.html"> 
+							<img id="thirdImg" src="assets/about/interests200x142.png" width="200" height="142" title="Interests"/>
+						</a>
+					</div>
+					<div>
+						<a href="about-education.html"> 
+							<img id="fourthImg" src="assets/about/education293x198.png" width="292" height="198" title="Education"/>
+						</a>
+						<a href="about-resume.html"> 
+							<img id="fifthImg" src="assets/about/resume168x149.png" width="168" height="149" title="Education"/>
+						</a> 
+					</div>
+				</div>
+			</div>
 
-			</footer>
-		</section>
-	
-	<figure1> 
-		<img src="assets/about/whoiam215x278.png"whoiamreal.png"" width="215" height="278" title="Who I Am"/> 
-		</figure1>
-	
-	<figure2>
-		<img src="assets/about/skills163x145.png" width="163" height="145" title="Skills"/>
-		</figure2>
-	
-	<figure3> 
-		<img src="assets/about/interests200x142.png" width="200" height="142" title="Interests"/>
-		</figure3>
-	
-	<figure4> 
-		<img src="assets/about/education293x198.png" width="292" height="198" title="Education"/>
-		</figure4>
-		
-	<figure5> 
-		<img src="assets/about/resume168x149.png" width="168" height="149" title="Education"/>
-		</figure5>
 
-		<script>
+			<script>
 
-			
-function myFunction() {
-    document.getElementById("dropdown").classList.toggle("show");
-}
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdownbutton')) {
+				function showAbout() {
+					document.getElementById("aboutMenu").classList.toggle("show");
+				}
 
-    var dropdowns = document.getElementsByClassName("dropdowncontent");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-	</body>
-</html>
+				function showDesign() {
+					document.getElementById("designMenu").classList.toggle("show");
+				}
+
+				function showFinearts() {
+					document.getElementById("fineartsMenu").classList.toggle("show");
+				}
+
+				function showWriting() {
+					document.getElementById("writingMenu").classList.toggle("show");
+				}
+
+				window.onclick = function(event) {
+					if (!event.target.matches('.dropdownbutton')) {
+
+						var dropdowns = document.getElementsByClassName("dropdowncontent");
+						var i;
+						for (i = 0; i < dropdowns.length; i++) {
+							var openDropdown = dropdowns[i];
+							if (openDropdown.classList.contains('show')) {
+								openDropdown.classList.remove('show');
+							}
+						}
+					}
+				}
+			</script>
+			</body>
+		</html>
