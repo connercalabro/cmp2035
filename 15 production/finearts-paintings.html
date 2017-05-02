@@ -17,33 +17,79 @@
 		<header>
 			<nav>
 				<h1> chelsea hayashi</h1>
+				<button onclick="showAbout()" class="dropdownbutton"> About </button>
+				<div id="aboutMenu" class="dropdowncontent"> 
+					<a href="about-whoiam.html"> who i am</a>
+					<a href="about-skills.html"> skills</a>
+					<a href="about-interests.html"> interests</a>
+					<a href="about-education.html"> education</a>
+					<a href="about-resume.html"> resume</a>
+				</div>
+				<button onclick="showDesign()" class="dropdownbutton"> design </button>
+				<div id="designMenu" class="dropdowncontent"> 
+					<a href="design-logos.html"> logos</a>
+					<a href="design-covers.html"> covers</a>
+					<a href="design-powerpoints.html"> powerpoints</a>
+					<a href="design-posters.html"> posters + flyers</a>
+				</div>
+				<button onclick="showFinearts()" class="dropdownbutton"> fine arts </button>
+				<div id="fineartsMenu" class="dropdowncontent"> 
+					<a href="finearts-drawings.html"> drawings</a>
+					<a href="finearts-paintings.html"> paintings</a>
+				</div>
+				<button onclick="showWriting()" class="dropdownbutton"> writing </button>
+				<div id="writingMenu" class="dropdowncontent"> 
+					<a href="writing-personal.html"> personal pieces</a>
+					<a href="writing-research.html"> research projects</a>
+				</div>
+				<button class="dropdownbutton"> contact </button>
 
-				<a href="http://validator.w3.org/check/referer" class="about">about</a>
-				<a href="http://jigsaw.w3.org/css-validator/check/referer"  class="design">design</a>
-				<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="fine-arts">fine arts</a>
-				<a href="http://mezzoblue.com/zengarden/faq/#aaa"  class="writing">writing</a>
-				<a href="https://github.com/mezzoblue/csszengarden.com"  class="contact">contact</a>
 			</nav>
+
+
 		</header>
-		<section class="main"> 
+
+		<script>
 
 
-			<h3>drawings </h3>
+			function showAbout() {
+				document.getElementById("aboutMenu").classList.toggle("show");
+			}
 
-	
-			
-		<footer>
-				<a> 415-378-3782</a>
-				<a href="http://validator.w3.org/check/referer" class="email">chelsea.hayashi@tufts.edu</a>
-			
-				
+			function showDesign() {
+				document.getElementById("designMenu").classList.toggle("show");
+			}
 
-			</footer>
-		</section>
-	
-	<figure1> 
+			function showFinearts() {
+				document.getElementById("fineartsMenu").classList.toggle("show");
+			}
+
+			function showWriting() {
+				document.getElementById("writingMenu").classList.toggle("show");
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropdownbutton')) {
+
+					var dropdowns = document.getElementsByClassName("dropdowncontent");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+		<div class="paintingsmain"> 
+
+
+			<h3>paintings </h3>
+
+	<div class="paintingfigure1"> 
 		<img src="assets/fine-arts/paintings/painting1-177x243.png" width="177" height="243" title="Painting1"/> 
-		</figure1>
+		</div>
 	
 	<figcaption>
 		<b> self portrait  </b>
@@ -51,9 +97,9 @@
 		oil paint
 		</figcaption>
 		
-	<figure2>
+	<div class="paintingfigure2">
 		<img src="assets/fine-arts/paintings/painting2-181x240.png" width="182" height="242" title="Painting2"/>
-		</figure2>
+		</div>
 	
 	<figcaption>
 		<b> longing  </b>
@@ -62,9 +108,9 @@
 		</figcaption>
 
 	
-	<figure3> 
+	<div class="paintingfigure3"> 
 		<img src="assets/fine-arts/paintings/painting3-187x242.png" width="187" height="242" title="Poster3"/> 
-		</figure3>
+		</div>
 	
 	<figcaption>
 		<b> Ben  </b>
@@ -73,9 +119,9 @@
 		</figcaption>
 	
 	
-	<figure4> 
+	<div class="paintingfigure4"> 
 		<img src="assets/fine-arts/paintings/painting4-270x201.png" width="270" height="201" title="Painting4"/> 
-		</figure4>
+		</div>
 	
 	<figcaption>
 		<b> Doodle  </b>
@@ -84,9 +130,9 @@
 		</figcaption>
 		
 	
-	<figure5> 
+	<div class="paintingfigure5"> 
 		<img src="assets/fine-arts/paintings/painting5-266x20.png" width="266" height="201" title="Painting5"/> 
-		</figure5>
+		</div>
 	
 	<figcaption>
 		<b> skyline  </b>
@@ -94,14 +140,36 @@
 		acrylic
 		</figcaption>
 	
-	<figure6> 
+	<div class="paintingfigure6"> 
 		<img src="assets/fine-arts/paintings/painting6-167x217.png" width="167" height="217" title="Painting6"/> 
-		</figure6>
+		</div>
 	
 	<figcaption>
 		<b> Pedro  </b>
 		<br>
 		Acrylic
 		</figcaption>
+	
+	<footer>
+				<div id="social_buttons">
+					<a href="http://www.linkedin.com">
+						<img src="assets/social/linkedinblack.png" width="35" height="35" title="Linkedin">
+					</a>
+
+					<a href="http://www.facebook.com">
+						<img src="assets/social/fbblack.png" width="35" height="35" title="Facebook">
+					</a>
+
+					<a href="http://www.instagram.com">
+						<img src="assets/social/instablack.png" width="35" height="35" title="Instagram">
+					</a>
+				</div>	
+				<div id="footer_phone">
+					<p><a href="tel:4153783782">(415) 378-3782</a></p>
+				</div>
+				<div id="footer_email">
+					<p><a href="mailto:chelsea.hayashi@tufts.edu">chelsea.hayashi@tufts.edu</a></p>
+				</div>
+			</footer> 
 	</body>
 </html>

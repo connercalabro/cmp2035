@@ -17,33 +17,80 @@
 		<header>
 			<nav>
 				<h1> chelsea hayashi</h1>
+				<button onclick="showAbout()" class="dropdownbutton"> About </button>
+				<div id="aboutMenu" class="dropdowncontent"> 
+					<a href="about-whoiam.html"> who i am</a>
+					<a href="about-skills.html"> skills</a>
+					<a href="about-interests.html"> interests</a>
+					<a href="about-education.html"> education</a>
+					<a href="about-resume.html"> resume</a>
+				</div>
+				<button onclick="showDesign()" class="dropdownbutton"> design </button>
+				<div id="designMenu" class="dropdowncontent"> 
+					<a href="design-logos.html"> logos</a>
+					<a href="design-covers.html"> covers</a>
+					<a href="design-powerpoints.html"> powerpoints</a>
+					<a href="design-posters.html"> posters + flyers</a>
+				</div>
+				<button onclick="showFinearts()" class="dropdownbutton"> fine arts </button>
+				<div id="fineartsMenu" class="dropdowncontent"> 
+					<a href="finearts-drawings.html"> drawings</a>
+					<a href="finearts-paintings.html"> paintings</a>
+				</div>
+				<button onclick="showWriting()" class="dropdownbutton"> writing </button>
+				<div id="writingMenu" class="dropdowncontent"> 
+					<a href="writing-personal.html"> personal pieces</a>
+					<a href="writing-research.html"> research projects</a>
+				</div>
+				<button class="dropdownbutton"> contact </button>
 
-				<a href="http://validator.w3.org/check/referer" class="about">about</a>
-				<a href="http://jigsaw.w3.org/css-validator/check/referer"  class="design">design</a>
-				<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="fine-arts">fine arts</a>
-				<a href="http://mezzoblue.com/zengarden/faq/#aaa"  class="writing">writing</a>
-				<a href="https://github.com/mezzoblue/csszengarden.com"  class="contact">contact</a>
 			</nav>
+
+
 		</header>
-		<section class="main"> 
+
+		<script>
+
+
+			function showAbout() {
+				document.getElementById("aboutMenu").classList.toggle("show");
+			}
+
+			function showDesign() {
+				document.getElementById("designMenu").classList.toggle("show");
+			}
+
+			function showFinearts() {
+				document.getElementById("fineartsMenu").classList.toggle("show");
+			}
+
+			function showWriting() {
+				document.getElementById("writingMenu").classList.toggle("show");
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropdownbutton')) {
+
+					var dropdowns = document.getElementsByClassName("dropdowncontent");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+		<div class="postersmain"> 
 
 
 			<h3>posters </h3>
 
 	
-			
-		<footer>
-				<a> 415-378-3782</a>
-				<a href="http://validator.w3.org/check/referer" class="email">chelsea.hayashi@tufts.edu</a>
-			
-				
-
-			</footer>
-		</section>
-	
-	<figure1> 
+	<div class="posterfigure1"> 
 		<img src="assets/design/posters/poster1-199x267.png" width="199" height="267" title="Poster1"/> 
-		</figure1>
+		</div>
 	
 	<figcaption>
 		<b> south end kicks flyer  </b>
@@ -51,9 +98,9 @@
 		adobe illustrator + photoshop
 		</figcaption>
 		
-	<figure2>
+	<div class="posterfigure2">
 		<img src="assets/design/posters/poster2-216x267.png" width="215" height="267" title="Poster2"/>
-		</figure2>
+		</div>
 	
 	<figcaption>
 		<b> Kabuki Night JCC Poster  </b>
@@ -62,9 +109,9 @@
 		</figcaption>
 
 	
-	<figure3> 
+	<div class="posterfigure3"> 
 		<img src="assets/design/posters/poster3-201x267.png" width="201" height="267" title="Poster3"/> 
-		</figure3>
+		</div>
 	
 	<figcaption>
 		<b> Ears for Peers Poster  </b>
@@ -73,9 +120,9 @@
 		</figcaption>
 	
 	
-	<figure4> 
+	<div class="posterfigure4"> 
 		<img src="assets/design/posters/poster4-286x175.png" width="286" height="175" title="Poster4"/> 
-		</figure4>
+		</div>
 	
 	<figcaption>
 		<b> Gills Sans Type Poster  </b>
@@ -84,9 +131,9 @@
 		</figcaption>
 		
 	
-	<figure5> 
+	<div class="posterfigure5"> 
 		<img src="assets/design/posters/poster5-247x175.png" width="247" height="175" title="Poster5"/> 
-		</figure5>
+		</div>
 	
 	<figcaption>
 		<b> JCC Matsure Poster  </b>
@@ -94,14 +141,38 @@
 		adobe photoshop
 		</figcaption>
 	
-	<figure6> 
+	<div class="posterfigure6"> 
 		<img src="assets/design/posters/poster6-250x193.png" width="250" height="193" title="Poster6"/> 
-		</figure6>
+		</div>
 	
 	<figcaption>
 		<b> JCC Dav of Remerbrance Poster  </b>
 		<br>
 		adobe photoshop
 		</figcaption>
+	
+	<footer>
+				<div id="social_buttons">
+					<a href="http://www.linkedin.com">
+						<img src="assets/social/linkedinblack.png" width="35" height="35" title="Linkedin">
+					</a>
+
+					<a href="http://www.facebook.com">
+						<img src="assets/social/fbblack.png" width="35" height="35" title="Facebook">
+					</a>
+
+					<a href="http://www.instagram.com">
+						<img src="assets/social/instablack.png" width="35" height="35" title="Instagram">
+					</a>
+				</div>	
+				<div id="footer_phone">
+					<p><a href="tel:4153783782">(415) 378-3782</a></p>
+				</div>
+				<div id="footer_email">
+					<p><a href="mailto:chelsea.hayashi@tufts.edu">chelsea.hayashi@tufts.edu</a></p>
+				</div>
+			</footer> 
+
+
 	</body>
 </html>

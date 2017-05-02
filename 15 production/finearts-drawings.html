@@ -17,33 +17,79 @@
 		<header>
 			<nav>
 				<h1> chelsea hayashi</h1>
+				<button onclick="showAbout()" class="dropdownbutton"> About </button>
+				<div id="aboutMenu" class="dropdowncontent"> 
+					<a href="about-whoiam.html"> who i am</a>
+					<a href="about-skills.html"> skills</a>
+					<a href="about-interests.html"> interests</a>
+					<a href="about-education.html"> education</a>
+					<a href="about-resume.html"> resume</a>
+				</div>
+				<button onclick="showDesign()" class="dropdownbutton"> design </button>
+				<div id="designMenu" class="dropdowncontent"> 
+					<a href="design-logos.html"> logos</a>
+					<a href="design-covers.html"> covers</a>
+					<a href="design-powerpoints.html"> powerpoints</a>
+					<a href="design-posters.html"> posters + flyers</a>
+				</div>
+				<button onclick="showFinearts()" class="dropdownbutton"> fine arts </button>
+				<div id="fineartsMenu" class="dropdowncontent"> 
+					<a href="finearts-drawings.html"> drawings</a>
+					<a href="finearts-paintings.html"> paintings</a>
+				</div>
+				<button onclick="showWriting()" class="dropdownbutton"> writing </button>
+				<div id="writingMenu" class="dropdowncontent"> 
+					<a href="writing-personal.html"> personal pieces</a>
+					<a href="writing-research.html"> research projects</a>
+				</div>
+				<button class="dropdownbutton"> contact </button>
 
-				<a href="http://127.0.0.1:51122/design-covers.html" class="about">about</a>
-				<a href="http://jigsaw.w3.org/css-validator/check/referer"  class="design">design</a>
-				<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="fine-arts">fine arts</a>
-				<a href="http://mezzoblue.com/zengarden/faq/#aaa"  class="writing">writing</a>
-				<a href="https://github.com/mezzoblue/csszengarden.com"  class="contact">contact</a>
 			</nav>
+
+
 		</header>
-		<section class="main"> 
+
+		<script>
+
+
+			function showAbout() {
+				document.getElementById("aboutMenu").classList.toggle("show");
+			}
+
+			function showDesign() {
+				document.getElementById("designMenu").classList.toggle("show");
+			}
+
+			function showFinearts() {
+				document.getElementById("fineartsMenu").classList.toggle("show");
+			}
+
+			function showWriting() {
+				document.getElementById("writingMenu").classList.toggle("show");
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropdownbutton')) {
+
+					var dropdowns = document.getElementsByClassName("dropdowncontent");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+		<div class="drawingsmain"> 
 
 
 			<h3>drawings </h3>
-
 	
-			
-		<footer>
-				<a> 415-378-3782</a>
-				<a href="http://validator.w3.org/check/referer" class="email">chelsea.hayashi@tufts.edu</a>
-			
-				
-
-			</footer>
-		</section>
-	
-	<figure1> 
+	<div class="drawingfigure1"> 
 		<img src="assets/fine-arts/drawings/drawing1-230x303.png" width="230" height="303" title="Drawing1"/> 
-		</figure1>
+		</div>
 	
 	<figcaption>
 		<b> faces  </b>
@@ -51,9 +97,9 @@
 		colored pencil
 		</figcaption>
 		
-	<figure2>
+	<div class="drawingfigure2">
 		<img src="assets/fine-arts/drawings/drawing2-460x196.png" width="460" height="196" title="Drawing2"/>
-		</figure2>
+		</div>
 	
 	<figcaption>
 		<b> ameoba  </b>
@@ -62,14 +108,36 @@
 		</figcaption>
 
 		
-	<figure3>
+	<div class="drawingfigure3">
 		<img src="assets/fine-arts/drawings/drawing3-234x316.png" width="234" height="316" title="Drawing3"/>
-		</figure3>
+		</div>
 	
 	<figcaption>
 		<b> blind haze  </b>
 		<br>
 		charcoal
 		</figcaption>
+	
+	<footer>
+				<div id="social_buttons">
+					<a href="http://www.linkedin.com">
+						<img src="assets/social/linkedinblack.png" width="35" height="35" title="Linkedin">
+					</a>
+
+					<a href="http://www.facebook.com">
+						<img src="assets/social/fbblack.png" width="35" height="35" title="Facebook">
+					</a>
+
+					<a href="http://www.instagram.com">
+						<img src="assets/social/instablack.png" width="35" height="35" title="Instagram">
+					</a>
+				</div>	
+				<div id="footer_phone">
+					<p><a href="tel:4153783782">(415) 378-3782</a></p>
+				</div>
+				<div id="footer_email">
+					<p><a href="mailto:chelsea.hayashi@tufts.edu">chelsea.hayashi@tufts.edu</a></p>
+				</div>
+			</footer> 
 	</body>
 </html>
