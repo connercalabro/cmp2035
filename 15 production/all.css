@@ -19,7 +19,7 @@ nav {
 }
 
 .padding {
-	padding-left: 100px;
+	padding-left: 00px;
 	padding-right: 100px;
 	margin-left: auto ;
 	margin-right: auto ; 
@@ -40,26 +40,42 @@ nav {
 	padding-right: 30px ; 
 	margin-right:  40px ; 
 	border: 1px solid black ; 
-	display: inline-block ;
 	background-color: transparent ; 
 	}
 
+.dropdown {
+	position: relative ;
+	display: inline-block ;
+}
 
-.dropdownbutton:hover {
+.dropdown:hover .dropdowncontent {
+/*	background-color: black ; */
+/*	color: white ;*/
+	display: block ;
+}
+
+
+.dropdown:hover .dropdownbutton {
+	background-color: black ;
+	color: white ;
+	
+}
+#current {
 	background-color: black ; 
 	color: white ;
 }
 
+
 .dropdowncontent {
 	position: absolute ; 
 	display: none ;
-	z-index: 2 ;
+	z-index: 1 ;
 }
 
 .dropdowncontent a{ 
 	text-decoration: none ;
 	margin-right: 0px; 
-	margin-left: 100px ;
+/*	margin-left: 100px ;*/
 	font-family: "romanD", sans-serif ;
 	text-transform: lowercase;
 	font-weight: bolder ; 
@@ -84,21 +100,18 @@ nav {
 	display: block ;
 }
 
-#designmenu {
-	margin-left: 150px ;
-	
-}
-
 #fineartsmenu {
 	margin-left: 305px ;
 	
 }
 
-#writingmenu {
-	margin-left: 480px ;
+/*#writingmenu {*/
+/*	margin-left: 480px ;*/
 	
 }
-header h1 {
+
+.navheader {
+margin: auto;
 	display: block;
 	font-family: "quicksand", sans-serif ;
 	text-transform: lowercase ;
@@ -107,12 +120,27 @@ header h1 {
 	font-size: 35px ;
 	color: white ; 
 	text-align: center ; 
-	padding-bottom: 15px  ;
+	padding-bottom: 47px  ;
+	padding-top: 15px;	
+	
+}
+header h1 {
+	margin: auto;
+	display: block;
+	font-family: "quicksand", sans-serif ;
+	text-transform: lowercase ;
+	letter-spacing: 10px ;  
+	font-weight: lighter ;
+	font-size: 35px ;
+	color: white ; 
+	text-align: center ; 
+	padding-bottom: 47px  ;
 	padding-top: 15px;
+
+}
 /*	border: 5px solid yellow ; */
 	
 	
-}
 
 
 .about {
@@ -127,10 +155,11 @@ body {
 
 section.main {
 	width: 1000px ;
-	border: 5px solid red ;
+/*	border: 5px solid red ;*/
 	margin-left: 100px ;
 	margin-right: 100px ;
 	line-height: 15px ;
+	padding-top: 20px
 	
 	
 }
@@ -142,9 +171,10 @@ h1 {
 	text-transform: uppercase;
 	font-weight:inherit ;
 	letter-spacing: 3px ;
-	font-size: 30pt ;
+	font-size: 35pt ;
 	color: black; 
 	text-align: left;
+	margin-left: 100px ;
 	
 }
 
@@ -156,6 +186,7 @@ h2 {
 	text-transform: lowercase ;
 	font-size: 20pt ;
 	text-align: left;
+	margin-left: 100px ;
 	
 }
 
@@ -191,6 +222,7 @@ figcaption {
 	text-align: left;
 	padding-top: 15px; 
 	padding-bottom: 20px;
+	margin-bottom: 30px ;
 /*	padding-left: 30px ;*/
 /*	padding-right: 30px ; */
 /*	margin-right:  40px ;*/
@@ -215,7 +247,7 @@ footer {
 	}
 
 footer #social_buttons {
-    margin-top: 20px ;
+    margin-top: 10px ;
     margin-bottom: 20px ;
     margin-left: 30px ;
 /*	width:  150px;*/
@@ -225,13 +257,16 @@ footer #social_buttons {
 }
 
 footer #footer_email {
-    margin-top: 20px ;
-    float: right ;    
+    margin-top: 10px ;
+    float: right ; 
+	padding-bottom: -100px ;
+	text-decoration: underline ; 
 }
 footer #footer_phone {
-    margin-top: 20px ;
+    margin-top: 10px ;
     margin-left: 30px ;
     float: right ;
+	text-decoration: underline ;
 }
 
 /*
@@ -275,46 +310,99 @@ footer a{
 #allFive {
 	height: 400px;
 	margin-left: auto;
-	margin-right: auto ; 
-	border: 5px solid green ; 
+	margin-right: 400px ; 
+	border: 5px solid green ;  
 	
 }
 #allFive > div {
 	height: 400px;
+	width: 80% ;
+	
 }
 
-#firstImg {
+#aboutfirstimg {
+	margin-left: 200px;
 	position: relative;
-	top: -60px;
+	top: 40px;
 	height: 278px ;
 	width: 215px ; 
 }
 
-#secondImg {
+#aboutsecondImg {
 	position: relative;
-	top: 9px;
+	margin-left: 450px ;
+	top: -360px;
 	left: 20px;
 }
 
-#thirdImg {
+#aboutthirdImg {
 	position: relative;
-	top: 6px;
+	margin-left: 25px ;
+	top: -363px;
 	left: 40px;
 }
 
-#fourthImg {
+#aboutfourthImg {
 	position: relative;
-	top: 27px;
-	left: 20px;
+	top: -320px;
+	margin-left: 470px;
 }
 
-#fifthImg {
+#aboutfifthImg {
 	position: relative;
-	top: -22px;
-	left: 40px;
+	top: -369px;
+	left: 50px;
 }
 
-.mainwho, .skillsmain, .interestsmain, .educationmain, .logosmain, .coversmain, .powerpointsmain, .postersmain, .drawingsmain, .paintingsmain, .personalmain {
+#designfirstImg {
+	margin-left: 200px;
+	position: relative;
+	top: 40px;
+	
+}
+
+#designsecondImg {
+	margin-left: 420px ;
+	position: relative ;
+	top: -440px ; 
+}
+
+#designthirdImg {
+	position: relative ;
+	top: -361px ; 
+	left:45px
+}
+
+#designfourthimg {
+	position: relative ;
+	top: -400px ; 
+	left:375px
+}
+
+.mainfinearts {
+	width: 80% ;
+	margin-left: 200px ;
+	margin-top: 50px ;
+}
+
+
+.mainwriting {
+	width: 80% ;
+	margin-left: 200px ;
+	margin-top: 50px ;
+}
+
+#writingfig2 {
+	margin-left: 50px ;
+}
+
+#fineartsfig2 {
+margin-left: 20px ;
+	
+}
+
+
+.mainwho, .skillsmain, .interestsmain, .educationmain, .logosmain, .coversmain, .powerpointsmain, .postersmain, .drawingsmain, .paintingsmain, .personalmain, .researchmain, .resumemain {
 	width: 80% ;
 	margin: auto ; 
 }
@@ -339,7 +427,7 @@ p.whotext, p.skillstext, p.intereststext, p.educationtext{
 	
 }
 
-.whofigure1, .skillsfigure1, .interestsfigure1, .educationfigure1, .logofigure1, .coversfigure1, .powerpointfigure1, .posterfigure1, .drawingfigure1, .paintingfigure1, .personalfigure1  {
+.whofigure1, .skillsfigure1, .interestsfigure1, .educationfigure1, .logofigure1, .coversfigure1, .powerpointfigure1, .posterfigure1, .drawingfigure1, .paintingfigure1, .personalfigure1, .researchfigure1  {
 /*	margin-left: 30% ; */
 /*	margin-top: -52% ; */
 /*	margin-right: 30% ; */
@@ -352,7 +440,7 @@ p.whotext, p.skillstext, p.intereststext, p.educationtext{
 	
 }
 
-.whofigure2, .skillsfigure2, .interestsfigure2, .educationfigure2, .logofigure2, .coversfigure2, .coversfigure3, .coversfigure4, .coversfigure5, .coversfigure6, .powerpointfigure2, .posterfigure2, .posterfigure3, .posterfigure4,  .posterfigure5, .posterfigure6, .drawingfigure2, .drawingfigure3, .paintingfigure2, .paintingfigure3, .paintingfigure4, .paintingfigure5, .paintingfigure6, .personalfigure2, .personalfigure3            {
+.whofigure2, .skillsfigure2, .interestsfigure2, .educationfigure2, .logofigure2, .coversfigure2, .coversfigure3, .coversfigure4, .coversfigure5, .coversfigure6, .powerpointfigure2, .posterfigure2, .posterfigure3, .posterfigure4,  .posterfigure5, .posterfigure6, .drawingfigure2, .drawingfigure3, .paintingfigure2, .paintingfigure3, .paintingfigure4, .paintingfigure5, .paintingfigure6, .personalfigure2, .personalfigure3, .researchfigure2            {
 /*	margin-left: 30% ; */
 /*	margin-top: -52% ; */
 /*	margin-right: 30% ; */
@@ -364,3 +452,46 @@ div, p, footer, h1, h2, h3, img {
 /* border: 2px solid red ;*/
 }
 
+.drawingfigure3 {
+	margin-left: 90px ;
+}
+
+.captiontomove {
+	margin-left: 90px ; 
+	
+}
+
+.paintingfigure3 {
+	margin-top: 200px;
+}
+
+.paintingfigure5 {
+	margin-left: 70px;
+	margin-top: 51px ;
+}
+
+.skylinecaption {
+	margin-left: 70px ;
+}
+
+.column2 {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+	height: 750px ;
+}
+
+.column3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+	margin-top: 30px ;
+	width: 80% ;
+	height: 700px;
+}

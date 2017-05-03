@@ -16,38 +16,81 @@
 
 		<header>
 			<nav>
+				<Div class="navheader"> 
 				<h1> chelsea hayashi</h1>
-				<button onclick="showAbout()" class="dropdownbutton"> About </button>
-				<div id="aboutMenu" class="dropdowncontent"> 
+				</Div>
+				
+				<div class="dropdown"> 
+				<button onclick="window.location='http://127.0.0.1:57486/about.html'; "class="dropdownbutton"> About </button>
+				<div class="dropdowncontent" > 
 					<a href="about-whoiam.html"> who i am</a>
 					<a href="about-skills.html"> skills</a>
 					<a href="about-interests.html"> interests</a>
 					<a href="about-education.html"> education</a>
 					<a href="about-resume.html"> resume</a>
 				</div>
-				<button onclick="showDesign()" class="dropdownbutton"> design </button>
-				<div id="designMenu" class="dropdowncontent"> 
+				</div>
+				
+				<div class="dropdown"> 
+				<button onclick="window.location='http://127.0.0.1:57486/design.html'; "class="dropdownbutton" id="current"> design </button>
+				<div class="dropdowncontent"> 
 					<a href="design-logos.html"> logos</a>
 					<a href="design-covers.html"> covers</a>
 					<a href="design-powerpoints.html"> powerpoints</a>
 					<a href="design-posters.html"> posters + flyers</a>
 				</div>
-				<button onclick="showFinearts()" class="dropdownbutton"> fine arts </button>
-				<div id="fineartsMenu" class="dropdowncontent"> 
+				</div>
+				
+				<div class="dropdown">
+				<button onclick="window.location='http://127.0.0.1:57486/finearts.html'; "class="dropdownbutton"> fine arts </button>
+				<div class="dropdowncontent"> 
 					<a href="finearts-drawings.html"> drawings</a>
 					<a href="finearts-paintings.html"> paintings</a>
 				</div>
-				<button onclick="showWriting()" class="dropdownbutton"> writing </button>
+				</div>
+					
+				<div class="dropdown">	
+				<button onclick="window.location='http://127.0.0.1:57486/writing.html'; "class="dropdownbutton"> writing </button>
 				<div id="writingMenu" class="dropdowncontent"> 
 					<a href="writing-personal.html"> personal pieces</a>
 					<a href="writing-research.html"> research projects</a>
 				</div>
-				<button class="dropdownbutton"> contact </button>
+				</div>	
+					
+				
+				<div class="dropdown">	
+				<button onclick="window.location='http://127.0.0.1:57486/contact.html'; "class="dropdownbutton"> contact </button>
+				<div id="writingMenu" class="dropdowncontent">
+				</div>
+				</div>	
+				
+
 
 			</nav>
 
 
 		</header>
+
+		<script>
+
+
+			function showAbout() {
+				document.getElementById("aboutMenu").classList.toggle("show");
+			}
+
+			function showDesign() {
+				document.getElementById("designMenu").classList.toggle("show");
+			}
+
+			function showFinearts() {
+				document.getElementById("fineartsMenu").classList.toggle("show");
+			}
+
+			function showWriting() {
+				document.getElementById("writingMenu").classList.toggle("show");
+			}
+
+		</script>
 
 		<script>
 
@@ -88,6 +131,7 @@
 
 			<h3>magazine + book covers </h3>
 
+				<div class="column3"> 
 	
 	<div class="coversfigure1"> 
 		<img src="assets/design/covers/cover1-185x250.png" width="185" height="250" title="cover1"/> 
@@ -100,57 +144,61 @@
 	</figcaption>
 		
 	<div class="coversfigure2">
-		<img src="assets/design/covers/cover2-199x259.png" width="199" height="259" title="Cover2"/>
+		<img src="assets/design/covers/cover4-331x220.png" width="248" height="165" title="Cover2"/>
 		</div>
-	
-	<figcaption>
-		<b> Surf City of Dreams  </b>
-		<br>
-		adobe photoshop
-		</figcaption>
-
-	
-	<div class="coversfigure3"> 
-		<img src="assets/design/covers/cover3-199x259.png" width="199" height="259" title="Cover3"/> 
-		</div>
-	
-	<figcaption>
-		<b> The Economist: An Oyster in the Story  </b>
-		<br>
-		adobe photoshop
-		</figcaption>
-	
-	
-	<div class="coversfigure4"> 
-		<img src="assets/design/covers/cover4-331x220.png" width="331" height="220" title="Cover4"/> 
-		</div>
-	
-	<figcaption>
+					
+		<figcaption>
 		<b> Twelfth Night  </b>
 		<br>
 		adobe illustrator + photoshop
 		</figcaption>
-		
+
 	
-	<div class="coversfigure5"> 
-		<img src="assets/design/covers/cover5-331x220.png" width="331" height="220" title="Cover5"/> 
-		</figure5>
+	<div class="coversfigure3"> 
+		<img src="assets/design/covers/cover2-199x259.png" width="199" height="259" title="Cover3"/> 
+		</div>
+
+			
+		<figcaption>
+		<b> Surf City of Dreams  </b>
+		<br>
+		adobe photoshop
+		</figcaption>		
+	
+	
+	<div class="coversfigure4"> 
+		<img src="assets/design/covers/cover5-331x220.png" width="248" height="165" title="Cover4"/> 
+		</div>
 	
 	<figcaption>
 		<b> Macbeth  </b>
 		<br>
 		adobe illustrator + photoshop
 		</figcaption>
+					
+	
+	<div class="coversfigure5"> 
+		<img src="assets/design/covers/cover3-199x259.png" width="199" height="259" title="Cover5"/> 
+		</div>
+	
+			<figcaption>
+		<b> The Economist: An Oyster  in the Story  </b>
+		<br>
+		adobe photoshop
+		</figcaption>
+			
 	
 	<div class="coversfigure6"> 
-		<img src="assets/design/covers/cover6-331x220.png" width="331" height="220" title="Cover6"/> 
-		</figure6>
+		<img src="assets/design/covers/cover6-331x220.png" width="248" height="165" title="Cover6"/> 
+		</div>
 	
 	<figcaption>
 		<b> Romeo and Juliet  </b>
 		<br>
 		adobe illustrator + photoshop
 		</figcaption>
+	
+		</div>  
 	<footer>
 				<div id="social_buttons">
 					<a href="http://www.linkedin.com">

@@ -16,72 +16,60 @@
 
 		<header>
 			<nav>
+				<Div class="navheader"> 
 				<h1> chelsea hayashi</h1>
-				<button onclick="showAbout()" class="dropdownbutton"> About </button>
-				<div id="aboutMenu" class="dropdowncontent"> 
+				</Div>
+				
+				<div class="dropdown"> 
+				<button onclick="window.location='http://127.0.0.1:57486/about.html'; "class="dropdownbutton" id="current"> About </button>
+				<div class="dropdowncontent" > 
 					<a href="about-whoiam.html"> who i am</a>
 					<a href="about-skills.html"> skills</a>
 					<a href="about-interests.html"> interests</a>
 					<a href="about-education.html"> education</a>
 					<a href="about-resume.html"> resume</a>
 				</div>
-				<button onclick="showDesign()" class="dropdownbutton"> design </button>
-				<div id="designMenu" class="dropdowncontent"> 
+				</div>
+				
+				<div class="dropdown"> 
+				<button onclick="window.location='http://127.0.0.1:57486/design.html'; "class="dropdownbutton"> design </button>
+				<div class="dropdowncontent"> 
 					<a href="design-logos.html"> logos</a>
 					<a href="design-covers.html"> covers</a>
 					<a href="design-powerpoints.html"> powerpoints</a>
 					<a href="design-posters.html"> posters + flyers</a>
 				</div>
-				<button onclick="showFinearts()" class="dropdownbutton"> fine arts </button>
-				<div id="fineartsMenu" class="dropdowncontent"> 
+				</div>
+				
+				<div class="dropdown">
+				<button onclick="window.location='http://127.0.0.1:57486/finearts.html'; "class="dropdownbutton"> fine arts </button>
+				<div class="dropdowncontent"> 
 					<a href="finearts-drawings.html"> drawings</a>
 					<a href="finearts-paintings.html"> paintings</a>
 				</div>
-				<button onclick="showWriting()" class="dropdownbutton"> writing </button>
+				</div>
+					
+				<div class="dropdown">	
+				<button onclick="window.location='http://127.0.0.1:57486/writing.html'; "class="dropdownbutton"> writing </button>
 				<div id="writingMenu" class="dropdowncontent"> 
 					<a href="writing-personal.html"> personal pieces</a>
 					<a href="writing-research.html"> research projects</a>
 				</div>
-				<button class="dropdownbutton"> contact </button>
+				</div>	
+					
+				
+				<div class="dropdown">	
+				<button onclick="window.location='http://127.0.0.1:57486/contact.html'; "class="dropdownbutton"> contact </button>
+				<div id="writingMenu" class="dropdowncontent">
+				</div>
+				</div>	
+				
+
 
 			</nav>
-		
-			
+
+
 		</header>
-		
-		<script>
-
-
-                function showAbout() {
-                    document.getElementById("aboutMenu").classList.toggle("show");
-                }
-
-                function showDesign() {
-                    document.getElementById("designMenu").classList.toggle("show");
-                }
-
-                function showFinearts() {
-                    document.getElementById("fineartsMenu").classList.toggle("show");
-                }
-
-                function showWriting() {
-                    document.getElementById("writingMenu").classList.toggle("show");
-                }
-
-                window.onclick = function(event) {
-                    if (!event.target.matches('.dropdownbutton')) {
-
-                        var dropdowns = document.getElementsByClassName("dropdowncontent");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                            var openDropdown = dropdowns[i];
-                            if (openDropdown.classList.contains('show')) {
-                                openDropdown.classList.remove('show');
-                            }
-                        }
-                    }
-                }
-            </script>
 		<div class="interestsmain"> 
 
 
