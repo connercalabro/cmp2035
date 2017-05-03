@@ -21,7 +21,7 @@
 				</Div>
 				
 				<div class="dropdown"> 
-				<button onclick="window.location='http://127.0.0.1:57486/about.html'; "class="dropdownbutton" id="current"> About </button>
+				<button onclick="window.location='http://127.0.0.1:57805/about.html'; "class="dropdownbutton" id="current"> About </button>
 				<div class="dropdowncontent" > 
 					<a href="about-whoiam.html"> who i am</a>
 					<a href="about-skills.html"> skills</a>
@@ -32,7 +32,7 @@
 				</div>
 				
 				<div class="dropdown"> 
-				<button onclick="window.location='http://127.0.0.1:57486/design.html'; "class="dropdownbutton"> design </button>
+				<button onclick="window.location='http://127.0.0.1:57805/design.html'; "class="dropdownbutton"> design </button>
 				<div class="dropdowncontent"> 
 					<a href="design-logos.html"> logos</a>
 					<a href="design-covers.html"> covers</a>
@@ -42,7 +42,7 @@
 				</div>
 				
 				<div class="dropdown">
-				<button onclick="window.location='http://127.0.0.1:57486/finearts.html'; "class="dropdownbutton"> fine arts </button>
+				<button onclick="window.location='http://127.0.0.1:57805/finearts.html'; "class="dropdownbutton"> fine arts </button>
 				<div class="dropdowncontent"> 
 					<a href="finearts-drawings.html"> drawings</a>
 					<a href="finearts-paintings.html"> paintings</a>
@@ -50,7 +50,7 @@
 				</div>
 					
 				<div class="dropdown">	
-				<button onclick="window.location='http://127.0.0.1:57486/writing.html'; "class="dropdownbutton"> writing </button>
+				<button onclick="window.location='http://127.0.0.1:57805/writing.html'; "class="dropdownbutton"> writing </button>
 				<div id="writingMenu" class="dropdowncontent"> 
 					<a href="writing-personal.html"> personal pieces</a>
 					<a href="writing-research.html"> research projects</a>
@@ -93,6 +93,7 @@
 		</script>
 		
 		
+		
         <div class="padding">
             <section class="main"> 
                 <h1>about</h1>
@@ -125,60 +126,28 @@
             </div>
 
             <footer>
-                <div id="social_buttons">
-                    <a href="http://www.linkedin.com">
-                        <img src="assets/social/linkedinblack.png" width="35" height="35" title="Linkedin">
-                    </a>
+				<div id="social_buttons">
+					<a href="https://www.linkedin.com/in/chelsea-hayashi-475304a8">
+						<img src="assets/social/linkedinblack.png" width="35" height="35" title="Linkedin">
+					</a>
 
-                    <a href="http://www.facebook.com">
-                        <img src="assets/social/fbblack.png" width="35" height="35" title="Facebook">
-                    </a>
+					<a href="https://www.facebook.com/chelsea.hayashi.7?ref=br_rs">
+						<img src="assets/social/fbblack.png" width="35" height="35" title="Facebook">
+					</a>
 
-                    <a href="http://www.instagram.com">
-                        <img src="assets/social/instablack.png" width="35" height="35" title="Instagram">
-                    </a>
-                </div>	
-                <div id="footer_phone">
-                    <p><a href="tel:415-378-3782">(415) 378-3782</a></p>
-                </div>
-                <div id="footer_email">
-                    <p><a href="mailto:chelsea.hayashi@tufts.edu">chelsea.hayashi@tufts.edu</a></p>
-                </div>
-            </footer>            
-
-            <script>
+					<a href="https://www.instagram.com/chechechelsea/">
+						<img src="assets/social/instablack.png" width="35" height="35" title="Instagram">
+					</a>
+				</div>	
+				<div id="footer_phone">
+					<p><a href="tel:4153783782">(415) 378-3782</a></p>
+				</div>
+				<div id="footer_email">
+					<p><a href="mailto:chelsea.hayashi@tufts.edu">chelsea.hayashi@tufts.edu</a></p>
+				</div>
+			</footer>        
 
 
-                function showAbout() {
-					window.location='http://127.0.0.1:57486/about.html'
-                    document.getElementById("aboutMenu").classList.toggle("show");
-                }
 
-                function showDesign() {
-                    document.getElementById("designMenu").classList.toggle("show");
-                }
-
-                function showFinearts() {
-                    document.getElementById("fineartsMenu").classList.toggle("show");
-                }
-
-                function showWriting() {
-                    document.getElementById("writingMenu").classList.toggle("show");
-                }
-
-                window.onclick = function(event) {
-                    if (!event.target.matches('.dropdownbutton')) {
-
-                        var dropdowns = document.getElementsByClassName("dropdowncontent");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                            var openDropdown = dropdowns[i];
-                            if (openDropdown.classList.contains('show')) {
-                                openDropdown.classList.remove('show');
-                            }
-                        }
-                    }
-                }
-            </script>
             </body>
         </html>
